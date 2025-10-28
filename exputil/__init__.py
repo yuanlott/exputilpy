@@ -20,6 +20,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+from importlib.metadata import version, PackageNotFoundError
 from .shell import (
     LocalShell,
     RemoteShell,
@@ -40,3 +41,9 @@ from .input_output import (
     read_csv_direct_in_columns,
     plain_replace_in_file_in_place
 )
+
+
+try:
+    __version__ = version("exputil")
+except PackageNotFoundError:
+    __version__ = "0.0.0"

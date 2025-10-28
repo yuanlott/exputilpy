@@ -22,17 +22,22 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from distutils.core import setup
+from setuptools import setup
+
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
 setup(
     name='exputil',
-    version='1.8.2',
+    version='1.9.1',
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     description='Experiment utilities',
     license='MIT',
-    python_requires='>=3.7',
+    python_requires='>=3.8',
     author='snkas',
     author_email='snkasdev+exputilpy@gmail.com',
-    url='https://github.com/snkas/exputilpy',
+    url="https://github.com/yuanlott/exputilpy",
     packages=['exputil'],
     classifiers=[
         'Development Status :: 4 - Beta',

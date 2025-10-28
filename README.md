@@ -16,10 +16,10 @@ Please note that it is written with a Linux bash in mind, so some functionality 
 
 ## Installation
 
-**Python version: 3.7+**
+**Python version: 3.8+**
 
 ```bash
-python3 -m pip install git+https://github.com/snkas/exputilpy.git@v1.8.2
+python3 -m pip install exputil
 ```
 
 
@@ -53,7 +53,7 @@ python3 -m pip install pytest coverage
 1. Clone the GitHub repository:
 
    ```bash
-   git clone git@github.com:snkas/exputilpy.git
+   git clone git@github.com:yuanlott/exputilpy.git
    ```
 
 2. Install locally using `pip`:

@@ -29,7 +29,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 setup(
     name='exputil',
-    version='1.9.1',
+    version='1.9.2',
     long_description=long_description,
     long_description_content_type="text/markdown",
     description='Experiment utilities',
